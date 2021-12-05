@@ -1,6 +1,7 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production',
-  publicPath: '/mypage/',
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/mypage/'
+    : '/',
 
   chainWebpack: config => {
     config.module.rules.delete('eslint');
