@@ -1,58 +1,138 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <v-container>
+    <v-layout>
+      <v-flex xs12>
+        <v-img src="https://www.symph.co/static/img/banner-illus.svg"></v-img>
+      </v-flex>
+    </v-layout>
+    <v-layout text-xs-center mt-5 px-3 py-3 id="about">
+      <v-flex xs12>
+        <span class="display-2 font-weight-bold">About Me</span>
+      </v-flex>
+    </v-layout>
+    <v-layout mt-3 px-5 class="text-xs-center" row wrap>
+      <v-flex xs12>
+        <v-avatar size="250" color="grey lighten-4">
+          <img
+            src="https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/50988163_10213734001079444_2817855097181044736_n.jpg?_nc_cat=104&_nc_ht=scontent-nrt1-1.xx&oh=d558e14acbf714985470fb4b740c35a8&oe=5D357E65"
+            alt="avatar"
+          >
+        </v-avatar>
+        <p class="headline font-weight mt-2">Gwen Danielle Merida</p>
+        <p
+          class="title font-weight-thin mt-3"
+        >Hello I'm a Full Stack Web Developer and iOS Developer from Philippines. Have 5 years work experience in IT Industry.</p>
+      </v-flex>
+    </v-layout>
+    <!-- <v-layout text-xs-center mt-5 px-3 py-3 blue>
+      <v-flex xs12>
+        <span class="display-2 font-weight-bold white--text" id="skills">Skill Sets</span>
+      </v-flex>
+    </v-layout>
+    <v-layout text-xs-center px-3 py-3 blue row wrap>
+      <v-flex lg4 sm12 xs12>
+        <v-avatar size="150" color="grey lighten-4">
+          <img src="https://vuetifyjs.com/apple-touch-icon-180x180.png" alt="avatar">
+        </v-avatar>
+        <p class="subheading font-weight mt-2 white--text">Vue.js</p>
+      </v-flex>
+      <v-flex lg4 sm12 xs12>
+        <v-avatar size="150" color="grey lighten-4">
+          <img src="https://cdn.auth0.com/blog/react-js/react.png" alt="avatar">
+        </v-avatar>
+        <p class="subheading font-weight mt-2 white--text">Reactjs</p>
+      </v-flex>
+      <v-flex lg4 sm12 xs12>
+        <v-avatar size="150" color="grey lighten-4">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+            alt="avatar"
+          >
+        </v-avatar>
+        <p class="subheading font-weight mt-2 white--text">Angular 7</p>
+      </v-flex>
+    </v-layout>
+    <v-layout text-xs-center px-3 py-3 blue row wrap>
+      <v-flex lg4 sm12 xs12>
+        <v-avatar size="150" color="grey lighten-4">
+          <img src="https://tutorialedge.net/images/node.png" alt="avatar">
+        </v-avatar>
+        <p class="subheading font-weight mt-2 white--text">Node.js</p>
+      </v-flex>
+      <v-flex lg4 sm12 xs12>
+        <v-avatar size="150" color="grey lighten-4">
+          <img
+            src="https://cdn.freebiesupply.com/logos/large/2x/mysql-6-logo-png-transparent.png"
+            alt="avatar"
+          >
+        </v-avatar>
+        <p class="subheading font-weight mt-2 white--text">MySQL</p>
+      </v-flex>
+      <v-flex lg4 sm12 xs12>
+        <v-avatar size="150" color="grey lighten-4">
+          <img src="https://go.neo4j.com/rs/710-RRC-335/images/neo4j_logo_globe.png" alt="avatar">
+        </v-avatar>
+        <p class="subheading font-weight mt-2 white--text">Neo4j</p>
+      </v-flex>
+    </v-layout> -->
+  </v-container>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
-</script>
+  export default {
+    name: 'HelloWorld',
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
+    data: () => ({
+      ecosystem: [
+        {
+          text: 'vuetify-loader',
+          href: 'https://github.com/vuetifyjs/vuetify-loader',
+        },
+        {
+          text: 'github',
+          href: 'https://github.com/vuetifyjs/vuetify',
+        },
+        {
+          text: 'awesome-vuetify',
+          href: 'https://github.com/vuetifyjs/awesome-vuetify',
+        },
+      ],
+      importantLinks: [
+        {
+          text: 'Documentation',
+          href: 'https://vuetifyjs.com',
+        },
+        {
+          text: 'Chat',
+          href: 'https://community.vuetifyjs.com',
+        },
+        {
+          text: 'Made with Vuetify',
+          href: 'https://madewithvuejs.com/vuetify',
+        },
+        {
+          text: 'Twitter',
+          href: 'https://twitter.com/vuetifyjs',
+        },
+        {
+          text: 'Articles',
+          href: 'https://medium.com/vuetify',
+        },
+      ],
+      whatsNext: [
+        {
+          text: 'Explore components',
+          href: 'https://vuetifyjs.com/components/api-explorer',
+        },
+        {
+          text: 'Select a layout',
+          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
+        },
+        {
+          text: 'Frequently Asked Questions',
+          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
+        },
+      ],
+    }),
+  }
+</script>
