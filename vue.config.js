@@ -1,0 +1,8 @@
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/weather-app/'
+    : '/',
+  chainWebpack: config => {
+    config.module.rules.delete('eslint');
+  }
+}
