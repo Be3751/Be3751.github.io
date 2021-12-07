@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-layout>
+    <!-- <v-layout>
       <v-flex xs12>
         <v-img src="https://www.symph.co/static/img/banner-illus.svg"></v-img>
       </v-flex>
@@ -10,7 +10,7 @@
         <span class="display-2 font-weight-bold">About Me</span>
       </v-flex>
     </v-layout>
-    <v-layout mt-3 px-5 class="text-xs-center" row wrap>
+    <v-layout text-xs-center mt-3 px-5 row wrap>
       <v-flex xs12>
         <v-avatar size="250" color="grey lighten-4">
           <img
@@ -18,13 +18,13 @@
             alt="avatar"
           >
         </v-avatar>
-        <p class="headline font-weight mt-2">Gwen Danielle Merida</p>
-        <p
-          class="title font-weight-thin mt-3"
-        >Hello I'm a Full Stack Web Developer and iOS Developer from Philippines. Have 5 years work experience in IT Industry.</p>
+        <p class="headline font-weight mt-2">Masaya Sonobe</p>
+        <p class="title font-weight-thin mt-3">
+          Hello I'm a college student in Kyoto.
+        </p>
       </v-flex>
     </v-layout>
-    <!-- <v-layout text-xs-center mt-5 px-3 py-3 blue>
+    <v-layout text-xs-center mt-5 px-3 py-3 blue>
       <v-flex xs12>
         <span class="display-2 font-weight-bold white--text" id="skills">Skill Sets</span>
       </v-flex>
@@ -75,12 +75,40 @@
         <p class="subheading font-weight mt-2 white--text">Neo4j</p>
       </v-flex>
     </v-layout> -->
+    <v-row>
+      <v-col cols="12">
+        <v-img src="https://www.symph.co/static/img/banner-illus.svg"></v-img>
+      </v-col>
+    </v-row>
+    <v-row class="grey lighten-3" style="height: 600px;">
+      <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #FFCDD2">
+        column 1
+      </v-col>
+      <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #F8BBD0">
+        column 2
+      </v-col>
+      <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #E1BEE7">
+        column 3
+      </v-col>
+      <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #D1C4E9">
+        column 4
+      </v-col>
+      <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #C5CAE9">
+        column 5
+      </v-col>
+      <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #BBDEFB">
+        column 6
+      </v-col>
+      <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #B3E5FC">
+        column 7
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Home',
 
     data: () => ({
       ecosystem: [
