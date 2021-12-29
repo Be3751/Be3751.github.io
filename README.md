@@ -1,5 +1,8 @@
 # mypage
 
+##
+制作途中の自己紹介系サイトです。
+
 ## Project setup
 ```
 npm install
