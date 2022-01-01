@@ -6,15 +6,16 @@
       dark
     >
       <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
+        <router-link to="/">
+          <v-img
+            alt="Vuetify Logo"
+            class="shrink mr-2"
+            contain
+            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+            transition="scale-transition"
+            width="40"
+          />
+        </router-link>
         <v-img
           alt="Vuetify Name"
           class="shrink mt-1 hidden-sm-and-down"
@@ -34,29 +35,22 @@
             v-bind="attrs"
             v-on="on"
           >
-            Dropdown
+            Menu
           </v-btn>
         </template>
         <v-list>
           <v-list-item
             v-for="(item, index) in items"
             :key="index"
+            :to="item.to"
           >
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
     <v-main>
-      <Home/>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
@@ -74,13 +68,20 @@ export default {
   data: () => ({
     items: {
       item1: {
-        title: "hoge1"
+        title: "About me",
+        to: "about"
       },
       item2: {
-        title: "hoge2"
+        title: "Works",
+        to: "works"
       },
       item3: {
-        title: "hoge3"
+        title: "Blog",
+        to: "blog"
+      },
+      item4: {
+        title: "Other",
+        to: "other"
       }
     }
   }),
