@@ -77,7 +77,7 @@
     </v-layout> -->
     <v-row>
       <v-col cols="12">
-        <v-img src="https://www.symph.co/static/img/banner-illus.svg"></v-img>
+        <v-img src="@/assets/img/home_design.jpg"></v-img>
       </v-col>
     </v-row>
     <v-row class="grey lighten-3" style="height: 600px;">
