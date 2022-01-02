@@ -6,7 +6,7 @@
       dark
     >
       <div class="d-flex align-center">
-        <router-link to="/">
+        <router-link to="/mypage">
           <v-img
             alt="Vuetify Logo"
             class="shrink mr-2"
