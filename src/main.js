@@ -13,15 +13,17 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/',      component: Home },
-  { path: '/about', component: About },
-  { path: '/works', component: Works },
-  { path: '/blog', component: Blog },
-  { path: '/other', component: Other }
+  { path: '/mypage',      component: Home },
+  { path: '/mypage/about', component: About },
+  { path: '/mypage/works', component: Works },
+  { path: '/mypage/blog', component: Blog },
+  { path: '/mypage/other', component: Other }
 ]
 
 const router = new VueRouter({
-  mode: 'history', routes})
+  mode: 'history', 
+  routes
+})
 
 new Vue({
   vuetify,

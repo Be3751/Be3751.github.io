@@ -6,7 +6,7 @@
       dark
     >
       <div class="d-flex align-center">
-        <router-link to="/">
+        <router-link to="/mypage">
           <v-img
             alt="Vuetify Logo"
             class="shrink mr-2"
@@ -69,19 +69,19 @@ export default {
     items: {
       item1: {
         title: "About me",
-        to: "about"
+        to: "/mypage/about"
       },
       item2: {
         title: "Works",
-        to: "works"
+        to: "/mypage/works"
       },
       item3: {
         title: "Blog",
-        to: "blog"
+        to: "/mypage/blog"
       },
       item4: {
         title: "Other",
-        to: "other"
+        to: "/mypage/other"
       }
     }
   }),
