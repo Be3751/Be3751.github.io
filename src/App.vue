@@ -27,7 +27,43 @@
       </div>
 
       <v-spacer></v-spacer>
-        <v-menu offset-y>
+
+      <div class="d-flex align-center">
+        <v-btn icon to="/mypage/about" class="mr-2 ml-2">
+          <v-icon>mdi-card-account-details-outline</v-icon>
+        </v-btn>
+
+        <v-btn icon to="/mypage/works" class="mr-2 ml-2">
+          <v-icon>mdi-folder-multiple-image</v-icon>
+        </v-btn>
+
+        <v-btn icon to="/mypage/blog" class="mr-2 ml-2">
+          <v-icon>mdi-book-open-variant</v-icon>
+        </v-btn>
+      </div>
+
+      <!-- <v-list>
+        <v-list-item
+          v-for="(item, index) in menuItems"
+          :key="index"
+          :to="item.to"
+        >
+          <v-btn
+          color="transparent">
+            <v-img
+              alt="Vuetify Name"
+              class="shrink mt-1 hidden-sm-and-down"
+              contain
+              max-width="100"
+              :src="item.src"
+              width="30"
+            />
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-btn>
+        </v-list-item>
+      </v-list> -->
+    
+      <!-- <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             color="white"
@@ -47,7 +83,7 @@
           <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
     </v-app-bar>
     <v-main>
       <router-view></router-view>
@@ -66,24 +102,23 @@ export default {
   },
 
   data: () => ({
-    items: {
+    menuItems: {
       item1: {
-        title: "About me",
-        to: "/mypage/about"
+        title: "AboutMe",
+        to: "/mypage/about",
+        src: require("@/assets/img/cat_icon.png")
       },
       item2: {
         title: "Works",
-        to: "/mypage/works"
+        to: "/mypage/works",
+        src: require("@/assets/img/photo_icon.png")
       },
       item3: {
         title: "Blog",
-        to: "/mypage/blog"
-      },
-      item4: {
-        title: "Other",
-        to: "/mypage/other"
+        to: "/mypage/blog",
+        src: require("@/assets/img/blog_icon.png")
       }
-    }
+    },
   }),
 };
 </script>

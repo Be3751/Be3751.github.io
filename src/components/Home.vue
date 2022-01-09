@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="grey lighten-3" style="height: 600px;">
+    <!-- <v-row class="grey lighten-3" style="height: 600px;">
       <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #FFCDD2">
         column 1
       </v-col>
@@ -28,7 +28,7 @@
       <v-col cols="12" sm="8" md="6" lg="4" xl="3" style="background-color: #B3E5FC">
         column 7
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
