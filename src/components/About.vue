@@ -5,8 +5,11 @@
         v-for="(item, index) in items"
         :key="index"
       >
-        <v-row class="grey lighten-3" style="height: 300px;">
-          <v-col cols="12" sm="4" md="6" lg="6" xl="6" style="background-color: white">
+        <v-row class="white" style="height: 400px;">
+          <!-- <v-col cols="12" sm="6" md="6" lg="6" xl="6" style="background-color: white">
+            <v-img :src="item.imgSrc" width="200px"></v-img>
+          </v-col> -->
+          <v-col cols="12" sm="6" md="6" lg="12" xl="12" style="background-color: white">
             <v-card
             elevation="3"
             >
@@ -16,11 +19,8 @@
               <v-card-text>
                 {{ item.text }}
               </v-card-text>
-              <p class="text-sm-h8 text-md-h7 text-lg-h6 font-weight-bold"></p>
+              <v-img :src="item.imgSrc" width="200px"></v-img>
             </v-card>
-          </v-col>
-          <v-col cols="12" sm="4" md="6" lg="6" xl="6" style="background-color: white">
-            <v-img :src="item.imgSrc" width="200px"></v-img>
           </v-col>
         </v-row>
       </v-list-item>
@@ -44,12 +44,12 @@
         item2: {
           name: 'Skills',
           text: 'Language: Python, JavaScript, C#, Java, Framework: Django, Flask, WPF, Infra: AWS(EC2, S3, DynamoDB, Amplify, etc...), Docker',
-          imgSrc: require('@/assets/img/gura_icon.jpg')
+          imgSrc: require('@/assets/img/vue_logo.png')
         },
         item3: {
           name: 'Career',
           text: 'hogehoge',
-          imgSrc: require('@/assets/img/gura_icon.jpg')
+          imgSrc: require('@/assets/img/pc_logo.png')
         }
       }
     }),
