@@ -1,37 +1,18 @@
 <template>
-  <v-container>
-    <v-list>
-      <v-list-item
-        v-for="(item, index) in items"
-        :key="index"
-      >
-  
-          <!-- <v-row class="white" style="height: 400px;">
-            <v-col cols="12" sm="6" md="6" lg="6" xl="6" style="background-color: white"> -->
-              <v-card
-                elevation="3"
-              >
-                <div class="d-flex flex-no-wrap justify-space-between">
-                  <div>
-                    <v-card-title
-                      class="text-h5"
-                      v-text="item.name"
-                    >
-                    </v-card-title>
-                    <v-card-text
-                      v-text="item.text"
-                    >
-                    </v-card-text>
-                  </div>
-                  <v-img :src="item.imgSrc" width="200px"></v-img>
-                </div>
-              </v-card>
-            <!-- </v-col> -->
-            <!-- <v-col cols="12" sm="6" md="6" lg="6" xl="6" style="background-color: white" > -->
-              
-            <!-- </v-col>
-          </v-row> -->
-
+  <v-container class="d-flex justify-center">
+      <v-list>
+      <v-list-item v-for="(item, index) in items" :key="index">
+        <v-card elevation="3" width="800" class="mb-5">
+          <v-row>
+            <v-col>
+              <v-card-title class="text-h5" v-text="item.name"></v-card-title>
+              <v-card-text v-text="item.text"></v-card-text>
+            </v-col>
+            <v-col class="d-flex justify-end mr-5">
+              <v-img :src="item.imgSrc" width="100"></v-img>
+            </v-col>
+          </v-row>
+        </v-card>
       </v-list-item>
     </v-list>
   </v-container>
@@ -48,7 +29,7 @@
         item1: {
           name: 'Be3',
           text: 'Doshisha Univ B4',
-          imgSrc: require('@/assets/img/gura_icon.jpg')
+          imgSrc: require('@/assets/img/gura_icon.png')
         },
         item2: {
           name: 'Skills',
