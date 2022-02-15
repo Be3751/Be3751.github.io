@@ -9,13 +9,13 @@
           >
             <v-col cols="7">
               <v-card-title v-text="item.name" class="text-h4"></v-card-title>
-              <v-card-text v-text="item.text1" class=""></v-card-text>
-              <v-card-text v-text="item.text2" class=""></v-card-text>
-              <v-card-text v-text="item.text3" class=""></v-card-text>
-              <v-card-text v-text="item.text4" class=""></v-card-text>
+              <v-card-text v-text="item.text1" class="pt-1 pb-1"></v-card-text>
+              <v-card-text v-text="item.text2" class="pt-1 pb-1"></v-card-text>
+              <v-card-text v-text="item.text3" class="pt-1 pb-1"></v-card-text>
+              <v-card-text v-text="item.text4" class="pt-1 pb-1"></v-card-text>
             </v-col>
-            <v-col cols="3" class="d-flex justify-center mr-5">
-              <v-img :src="item.imgSrc" max-width="180" max-height="180" aspect-ratio="4/4" ></v-img>
+            <v-col cols="3" class="d-flex justify-center mr-5" style="height: 300px">
+              <v-img :src="item.imgSrc" max-width="180" max-height="180" aspect-ratio="4/4" style="margin-top:30px"></v-img>
             </v-col>
           </v-row>
         </v-card>
@@ -34,9 +34,9 @@
       items: {
         item1: {
           name: "Basic Info",
-          text1: "所属：同志社大学M1",
+          text1: "所属：同志社大学M1（24卒）",
           text2: "研究テーマ：画像が喚起する感情の推定をするモデルの構築",
-          text3: "",
+          text3: "趣味：猫，洋服，銭湯，スマブラ",
           imgSrc: require('@/assets/img/gura_icon.png')
         },
         item2: {
@@ -59,8 +59,5 @@
   }
 </script>
 <style>
-.card-text{
-  padding-top: 0%;
-  padding-bottom: 0%;
-}
+
 </style>
