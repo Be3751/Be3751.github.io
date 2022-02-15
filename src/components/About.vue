@@ -13,6 +13,7 @@
               <v-card-text v-text="item.text2" class="pt-1 pb-1"></v-card-text>
               <v-card-text v-text="item.text3" class="pt-1 pb-1"></v-card-text>
               <v-card-text v-text="item.text4" class="pt-1 pb-1"></v-card-text>
+              <v-card-text v-text="item.text5" class="pt-1 pb-1"></v-card-text>
             </v-col>
             <v-col cols="3" class="d-flex justify-center mr-5" style="height: 300px">
               <v-img :src="item.imgSrc" max-width="180" max-height="180" aspect-ratio="4/4" style="margin-top:30px"></v-img>
@@ -37,14 +38,16 @@
           text1: "所属：同志社大学M1（24卒）",
           text2: "研究テーマ：画像が喚起する感情の推定をするモデルの構築",
           text3: "趣味：猫，洋服，銭湯，スマブラ",
+          text4: "最近の興味：GoによるAPI実装，応用情報，英検1級",
           imgSrc: require('@/assets/img/gura_icon.png')
         },
         item2: {
           name: "Skills",
-          text1: "言語: Python(daily), JavaScript(sometimes), C#(product dev), Java(sometimes), Go(learning)",
-          text2: "フレームワーク: Django, Flask, WPF",
-          text3: "インフラ: AWS(EC2, S3, DynamoDB, Amplify, etc...), Docker, Linux",
-          text4: "語学：TOEIC855, 英検準1級",
+          text1: "言語：Python(daily), JavaScript(sometimes), C#(product dev), Java(sometimes), Go(learning)",
+          text2: "フレームワーク： Django, Flask, WPF",
+          text3: "インフラ： AWS(EC2, S3, DynamoDB, Amplify, etc...), Docker",
+          text4: "その他：Git/GitHub, Linux",
+          text5: "語学：TOEIC855, 英検準1級",
           imgSrc: require('@/assets/img/vue_logo.png')
         },
         item3: {
