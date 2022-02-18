@@ -9,7 +9,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "core-js": "^3.6.5",
+    "sanitize-html": "^2.7.0",
     "vue": "^2.6.11",
     "vue-router": "^3.5.3",
     "vuetify": "^2.4.0"
