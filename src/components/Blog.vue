@@ -1,64 +1,35 @@
 <template>
   <v-container>
-    Blog
+    <v-row>
+      <v-col v-for="(article, i) in this.articles" :key="i">
+        <Article :article="article"></Article>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-  export default {
-    name: 'Blog',
+import axios from "axios";
+import Article from "@/components/Article";
 
-    data: () => ({
-      ecosystem: [
-        {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader',
-        },
-        {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify',
-        },
-        {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify',
-        },
-      ],
-      importantLinks: [
-        {
-          text: 'Documentation',
-          href: 'https://vuetifyjs.com',
-        },
-        {
-          text: 'Chat',
-          href: 'https://community.vuetifyjs.com',
-        },
-        {
-          text: 'Made with Vuetify',
-          href: 'https://madewithvuejs.com/vuetify',
-        },
-        {
-          text: 'Twitter',
-          href: 'https://twitter.com/vuetifyjs',
-        },
-        {
-          text: 'Articles',
-          href: 'https://medium.com/vuetify',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
-        },
-        {
-          text: 'Select a layout',
-          href: 'https://vuetifyjs.com/getting-started/pre-made-layouts',
-        },
-        {
-          text: 'Frequently Asked Questions',
-          href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
-        },
-      ],
-    }),
-  }
+export default {
+  name: 'Blog',
+  components: {
+    Article
+  },
+  data: function(){
+      return {
+          articles: []
+      }
+  },
+  async mounted() {
+      const response = await axios.get(
+      "https://be3blog.microcms.io/api/v1/articles",
+      {
+        headers: { "X-MICROCMS-API-KEY": "06cb9782f69d439397ed49767c3158854b33" }
+      }
+    );
+    this.articles = response.data.contents;
+  },
+}
 </script>
