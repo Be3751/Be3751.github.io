@@ -1,6 +1,6 @@
 <template>
   <v-container class="d-flex justify-center" style="height: 1000px; max-width: 2400px;">
-      <v-list>
+    <v-list>
       <v-list-item v-for="(item, index) in items" :key="index">
         <v-card elevation="3" width="70vw" class="mb-8">
           <v-row
@@ -34,12 +34,13 @@
         
     },
     data: () => ({
+      title: "About",
       items: {
         item1: {
           name: "Basic Information",
           text1: "所属: 同志社大学M1（24卒）",
           text2: "研究テーマ: 画像が喚起する感情の推定をするモデルの構築",
-          text3: "趣味: 猫, 洋服, 銭湯, スマブラ",
+          text3: "趣味: 猫, 洋服, 銭湯, スマブラ, 動画鑑賞（主にYouTubeとPrime Video）",
           text4: "最近の興味: GoによるAPI実装, 応用情報, 英検1級",
           imgSrc: require('@/assets/img/gura_icon.png')
         },
@@ -63,8 +64,11 @@
           text7: "画像が喚起する感情を推定する深層学習モデルの構築/学部4年, 2021年",
           imgSrc: require('@/assets/img/pc_logo.png')
         }
-      }
+      },
     }),
+    mounted() {
+      this.$emit("catchTitle", this.title)
+    }
   }
 </script>
 <style>

@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="grey"
-      dark
-    >
+    <v-app-bar app color="grey" dark>
       <div class="d-flex align-center">
         <router-link to="/mypage">
           <v-img
@@ -18,12 +14,13 @@
         </router-link>
         <v-img
           alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
+          class="shrink mt-0 hidden-sm-and-down"
           contain
           min-width="300"
           src="@/assets/img/title.png"
           width="100"
         />
+        <span class="ml-5 mt-1">be3:~ mypage$ less $HOME/{{ this.title }}</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -44,7 +41,7 @@
 
     </v-app-bar>
     <v-main>
-      <router-view></router-view>
+      <router-view @catchTitle="changeTitle"></router-view>
     </v-main>
   </v-app>
 </template>
@@ -54,13 +51,17 @@ import Home from './components/Home';
 
 export default {
   name: 'App',
-
   components: {
     Home,
   },
-
   data: () => ({
-    
+    title: ""
   }),
+  methods: {
+    changeTitle(title){
+      // alert(title);
+      this.title = title;
+    }
+  }
 };
 </script>

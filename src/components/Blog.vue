@@ -19,11 +19,16 @@ export default {
   },
   data: function(){
       return {
-          articles: []
+        title: "Blog",
+        articles: [],
       }
   },
   async mounted() {
-      const response = await axios.get(
+    // タイトルをApp.vueに送信
+    this.$emit("catchTitle", this.title);
+
+    // MicroCMSから記事情報を取得
+    const response = await axios.get(
       "https://be3blog.microcms.io/api/v1/articles",
       {
         headers: { "X-MICROCMS-API-KEY": "06cb9782f69d439397ed49767c3158854b33" }
