@@ -8,7 +8,7 @@
   export default {
     name: 'Works',
     data: () => ({
-      title: "Works"
+      title: "/Works"
     }),
     mounted() {
       this.$emit("catchTitle", this.title)

@@ -34,7 +34,7 @@
         
     },
     data: () => ({
-      title: "About",
+      title: "/Profile",
       items: {
         item1: {
           name: "Basic Information",

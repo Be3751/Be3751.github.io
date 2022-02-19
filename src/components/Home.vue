@@ -11,9 +11,11 @@
 <script>
   export default {
     name: 'Home',
-
     data: () => ({
-      
+      title: "",
     }),
+    mounted() {
+      this.$emit("catchTitle", this.title)
+    }
   }
 </script>
