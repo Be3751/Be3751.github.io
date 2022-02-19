@@ -14,7 +14,8 @@ export default {
   name: "ArticleDetail",
   data: function() {
     return {
-       article: {}
+      title: "/Blog/Post",
+      article: {}
     }
   },
   computed: {
@@ -25,12 +26,16 @@ export default {
     }
   },
   async mounted() {
-    console.log("mounted");
-    console.log(this.$route.params.id);
+    // タイトルをApp.vueに送信
+    this.$emit("catchTitle", this.title)
+
+    console.log(process.env.VUE_APP_X_MICROCMS_API_KEY)
+
+    // MicroCMSから記事情報を取得
     const response = await axios.get(
       "https://be3blog.microcms.io/api/v1/articles/" + this.$route.params.id,
       {
-        headers: { "X-MICROCMS-API-KEY": "06cb9782f69d439397ed49767c3158854b33" }
+        headers: { "X-MICROCMS-API-KEY": process.env.VUE_APP_X_MICROCMS_API_KEY }
       }
     );
     this.article = response.data;
