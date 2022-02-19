@@ -20,7 +20,7 @@
           src="@/assets/img/title.png"
           width="100"
         />
-        <span class="ml-5 mt-1">be3:~ mypage$ less $HOME/{{ this.title }}</span>
+        <span class="ml-5 mt-1 font-weight-bold">be3:~ mypage$ less $HOME/{{ this.title }}</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -29,14 +29,18 @@
         <v-btn icon to="/mypage/about" class="mr-2 ml-2">
           <v-icon>mdi-card-account-details-outline</v-icon>
         </v-btn>
+        <span class="ml-0 mr-0 font-weight-bold">Profile</span>
 
         <v-btn icon to="/mypage/works" class="mr-2 ml-2">
           <v-icon>mdi-folder-multiple-image</v-icon>
         </v-btn>
+        <span class="ml-0 mr-0 font-weight-bold">Works</span>
 
         <v-btn icon to="/mypage/blog" class="mr-2 ml-2">
           <v-icon>mdi-book-open-variant</v-icon>
         </v-btn>
+        <span class="ml-0 mr-0 font-weight-bold">Blog</span>
+
       </div>
 
     </v-app-bar>
