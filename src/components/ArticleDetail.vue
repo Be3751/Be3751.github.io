@@ -30,7 +30,7 @@ export default {
     const response = await axios.get(
       "https://be3blog.microcms.io/api/v1/articles/" + this.$route.params.id,
       {
-        headers: { "X-MICROCMS-API-KEY": "06cb9782f69d439397ed49767c3158854b33" }
+        headers: { "X-MICROCMS-API-KEY": VUE_APP_X_MICROCMS_API_KEY }
       }
     );
     this.article = response.data;
