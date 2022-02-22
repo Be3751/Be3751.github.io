@@ -4,8 +4,10 @@ services:
     build: .
     container_name: mypage
     ports:
-      - '8000:8000'
+      - '8080:8080'
     volumes:
-      - ./:/src
+      - type: bind
+        source: "./src"
+        target: "/mypage/src"
     stdin_open: true
     tty: true

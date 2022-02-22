@@ -25,8 +25,6 @@ export default {
     }
   },
   async mounted() {
-    console.log("mounted");
-    console.log(this.$route.params.id);
     const response = await axios.get(
       "https://be3blog.microcms.io/api/v1/articles/" + this.$route.params.id,
       {

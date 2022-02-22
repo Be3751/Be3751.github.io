@@ -20,7 +20,7 @@
           src="@/assets/img/title.png"
           width="100"
         />
-        <span class="ml-5 mt-1 font-weight-bold">be3:~ mypage$ ls $HOME{{ this.title }}</span>
+        <span class="ml-5 mt-1 font-weight-bold hidden-sm-and-down">be3:~ mypage$ ls $HOME{{ this.title }}</span>
       </div>
 
       <v-spacer></v-spacer>
