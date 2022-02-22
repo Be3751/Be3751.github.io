@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: mypage
+    ports:
+      - '8080:8080'
+    volumes:
+      - type: bind
+        source: "./src"
+        target: "/mypage/src"
+    stdin_open: true
+    tty: true
