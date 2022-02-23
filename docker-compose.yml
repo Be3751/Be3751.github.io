@@ -4,10 +4,10 @@ services:
     build: .
     container_name: mypage
     ports:
-      - '8080:8080'
+      - '8080:8080' # ホストOSのポート番号：コンテナのポート番号
     volumes:
       - type: bind
-        source: "./src"
-        target: "/mypage/src"
+        source: "./src" # ホストOS上のディレクトリ
+        target: "/mypage/src" # コンテナ上でマウントするディレクトリ
     stdin_open: true
     tty: true
