@@ -2,13 +2,13 @@
   <v-container class="d-flex justify-center" style="height: 1000px; max-width: 2400px;">
     <v-list>
       <v-list-item v-for="(item, index) in items" :key="index">
-        <v-card elevation="3" width="70vw" class="mb-8">
+        <v-card elevation="3" width="90vw" class="mb-8">  
+          <v-card-title v-text="item.name" class="text-h4 mt-5 mb-5 d-flex justify-center"></v-card-title>
           <v-row
-            style="height: 400px;"
+            style="height: auto;"
             justify="center" align-content="center"
           >
-            <v-col cols="7">
-              <v-card-title v-text="item.name" class="text-h4"></v-card-title>
+            <v-col cols="12" sm="8" md="5" lg="4" xl="3">
               <v-card-text v-text="item.text1" class="pt-1 pb-1"></v-card-text>
               <v-card-text v-text="item.text2" class="pt-1 pb-1"></v-card-text>
               <v-card-text v-text="item.text3" class="pt-1 pb-1"></v-card-text>
@@ -17,8 +17,8 @@
               <v-card-text v-text="item.text6" class="pt-1 pb-1"></v-card-text>
               <v-card-text v-text="item.text7" class="pt-1 pb-1"></v-card-text>
             </v-col>
-            <v-col cols="3" class="d-flex justify-center mr-5" style="height: 300px">
-              <v-img :src="item.imgSrc" max-width="180" max-height="180" aspect-ratio="4/4" style="margin-top:30px"></v-img>
+            <v-col cols="12" sm="8" md="5" lg="4" xl="3" class="d-flex justify-center" style="height: 300px">
+              <v-img :src="item.imgSrc" max-width="180" max-height="180" aspect-ratio="4/4" class=""></v-img>
             </v-col>
           </v-row>
         </v-card>
