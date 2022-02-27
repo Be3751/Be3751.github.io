@@ -17,7 +17,15 @@
         </v-card-subtitle>
 
         <v-card-actions>
-        <v-btn color="orange lighten-2" text @click="showDetail">Explore</v-btn>
+        <v-btn color="orange lighten-2" text @click="showDetail">Detail</v-btn>
+        <v-btn icon href="https://github.com/Be3751/mypage" class="mr-10 ml-2">
+          <v-img
+            class="shrink mb-1"
+            contain
+            max-width="25"
+            src="@/assets/img/github-icon.png"
+            width="25"/>
+        </v-btn>
         <v-spacer></v-spacer>
         <v-btn icon @click="show = !show">
             <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -47,7 +55,7 @@ export default {
 
   },
   mounted() {
-
+    
   },
   methods: {
       showDetail: function(){
