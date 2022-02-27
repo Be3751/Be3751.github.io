@@ -17,7 +17,7 @@
         </v-card-subtitle>
 
         <v-card-actions>
-        <v-btn color="orange lighten-2" text>Explore</v-btn>
+        <v-btn color="orange lighten-2" text @click="showDetail">Explore</v-btn>
         <v-spacer></v-spacer>
         <v-btn icon @click="show = !show">
             <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -48,6 +48,14 @@ export default {
   },
   mounted() {
 
+  },
+  methods: {
+      showDetail: function(){
+          this.$router.push({
+              name: "product-detail",
+              params: { id: 1}
+          })
+      }
   }
 };
 </script>
