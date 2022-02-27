@@ -20,7 +20,7 @@
         <v-btn color="orange lighten-2" text @click="showDetail">Detail</v-btn>
         <v-btn icon href="https://github.com/Be3751/mypage" class="mr-10 ml-2">
           <v-img
-            class="shrink mb-1 hidden-sm-and-down"
+            class="shrink mb-1"
             contain
             max-width="25"
             src="@/assets/img/github-icon.png"
