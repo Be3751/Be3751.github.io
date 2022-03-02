@@ -4,7 +4,7 @@
 自己紹介や制作物の掲載等を目的としたwebページです。
 制作途中です。  
 
-公開先（恥ずかしいですが）：  
+公開先💦：  
 https://be3751.github.io/mypage/
 
 ## Project setup
