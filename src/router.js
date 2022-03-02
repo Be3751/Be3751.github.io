@@ -15,9 +15,9 @@ const routes = [
   { path: '/mypage',      component: Home },
   { path: '/mypage/about', component: About},
   { path: '/mypage/works', component: Works },
-  { path: '/mypage/works/:id', name: "product-detail", component: ProductDetail },
+  { path: '/mypage/works/:id', name: "product-detail", component: ProductDetail},
   { path: '/mypage/blog', component: Blog },
-  { path: '/mypage/blog/:id', name: "article-detail", component: ArticleDetail, props: true},
+  { path: '/mypage/blog/:id', name: "article-detail", component: ArticleDetail},
   { path: '/mypage/other', component: Other }
 ]
 
