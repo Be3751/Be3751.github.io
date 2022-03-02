@@ -3,17 +3,14 @@
         class="mx-auto"
         max-width="344"
     >
-        <v-img
-        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-        height="200px"
-        ></v-img>
+        <v-img :src="product.img" height="200px"></v-img>
 
         <v-card-title>
-        Top western road trips
+        {{ product.title }}
         </v-card-title>
 
         <v-card-subtitle>
-        1,000 miles of wonder
+        {{ product.subtitle }}
         </v-card-subtitle>
 
         <v-card-actions>
@@ -46,6 +43,7 @@
 <script>
 export default {
   name: "Product",
+  props: ["product"],
   data: function() {
     return {
         show: false,
@@ -55,7 +53,7 @@ export default {
 
   },
   mounted() {
-    
+    console.log(this.product);
   },
   methods: {
       showDetail: function(){
