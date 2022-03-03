@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col v-for="(product, i) in this.items" :key="i">
+      <v-col v-for="(product, i) in this.products" :key="i">
         <Product :product="product"></Product>
       </v-col>
     </v-row>
@@ -18,52 +18,20 @@ export default {
   },
   data: () => ({
     title: "/Works",
-    items: {
-      item1: {
-          title: "mypage",
-          subtitle: "個人ページ",
-          img: require("@/assets/img/cat_hand.png"),
-          summary: "VuetifyによるGrid Systemを活用",
-          reposName: "mypage",
-          reposUrl: "https://github.com/Be3751/mypage"
-      },
-      item2: {
-          title: "ILBe",
-          subtitle: "研究室内の放置物品管理アプリ",
-          img: require("@/assets/img/cat_hand.png"),
-          summary: "bbb",
-          reposName: "ILBe",
-          reposUrl: "https://github.com/Be3751/ILBe"
-      },
-      item3: {
-          title: "KR-Notifier",
-          subtitle: "Zoom Meeting自動LINE通知ツール",
-          img: require("@/assets/img/cat_hand.png"),
-          summary: "ccc",
-          reposName: "KRManager",
-          reposUrl: "https://github.com/Be3751/KRManager"
-      },
-      item4: {
-          title: "CatDog-Classification",
-          subtitle: "犬猫分類器",
-          img: require("@/assets/img/cat_hand.png"),
-          summary: "ccc",
-          reposName: "CatDog-Classification",
-          reposUrl: "https://github.com/Be3751/CatDog-Classification"
-      },
-    }
-
+    products: [],
   }),
   async mounted() {
+    // タイトルをApp.vueに送信
     this.$emit("catchTitle", this.title);
 
-    // const response = await axios.get(
-    //   "https://api.github.com/user/repos",
-    //   {
-    //     headers: { "Authorization": "token "+process.env.VUE_APP_GITHUB_ACCESS_KEY}
-    //   }
-    // );
-    // console.log(response.data);
+    // MicroCMSから記事情報を取得
+    const response = await axios.get(
+      "https://be3blog.microcms.io/api/v1/products",
+      {
+        headers: { "X-MICROCMS-API-KEY": process.env.VUE_APP_X_MICROCMS_API_KEY }
+      }
+    );
+    this.products = response.data.contents;
   }
 }
 </script>

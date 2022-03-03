@@ -3,7 +3,7 @@
         class="mx-auto"
         max-width="344"
     >
-        <v-img :src="product.img" height="200px"></v-img>
+        <v-img :src="product.image.url" height="200px"></v-img>
 
         <v-card-title>
         {{ product.title }}
@@ -53,7 +53,6 @@ export default {
 
   },
   mounted() {
-    // console.log(this.product);
   },
   methods: {
       showDetail: function(){
