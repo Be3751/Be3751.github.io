@@ -26,7 +26,7 @@
       <v-spacer></v-spacer>
 
       <div class="d-flex align-center">
-        <v-btn icon to="/mypage/about" class="mr-10 ml-2">
+        <v-btn icon to="/mypage/profile" class="mr-10 ml-2">
           <v-icon>mdi-card-account-details-outline</v-icon>
           <span class="font-weight-bold ml-1">Profile</span>
         </v-btn>
