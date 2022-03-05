@@ -1,7 +1,7 @@
 <template>
   <v-card
     class="mx-auto"
-    max-width="400"
+    max-width="360"
   >
     <v-img
       class="white--text align-end"
