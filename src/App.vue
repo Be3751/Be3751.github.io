@@ -26,7 +26,7 @@
       <v-spacer></v-spacer>
 
       <div class="d-flex align-center">
-        <v-btn icon to="/mypage/about" class="mr-10 ml-2">
+        <v-btn icon to="/mypage/profile" class="mr-10 ml-2">
           <v-icon>mdi-card-account-details-outline</v-icon>
           <span class="font-weight-bold ml-1">Profile</span>
         </v-btn>
@@ -47,6 +47,39 @@
     <v-main>
       <router-view @catchTitle="changeTitle"></router-view>
     </v-main>
+
+    <v-footer
+      dark
+      padless
+    >
+      <v-card
+        class="flex grey"
+        flat
+        tile
+      >
+        <!-- <v-card-title class="teal">
+          <strong class="subheading">Get connected with us on social networks!</strong>
+
+          <v-spacer></v-spacer>
+
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4"
+            dark
+            icon
+          >
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-title> -->
+
+        <v-card-text class="py-2 white--text text-center">
+          <strong>{{ new Date().getFullYear() }} — Copyright © Be3 All Rights Reserved.</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
   </v-app>
 </template>
 
@@ -59,7 +92,13 @@ export default {
     Home,
   },
   data: () => ({
-    title: ""
+    title: "",
+    icons: [
+      'mdi-facebook',
+      'mdi-twitter',
+      'mdi-linkedin',
+      'mdi-instagram',
+    ],
   }),
   methods: {
     changeTitle(title){
