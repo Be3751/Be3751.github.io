@@ -1,5 +1,5 @@
 <template>
-  <v-container class="d-flex justify-center" style="height: 1000px; max-width: 2400px;">
+  <v-container class="d-flex justify-center" style="max-width: 2400px;">
     <v-list>
       <v-list-item v-for="(item, index) in items" :key="index">
         <v-card width="90vw" height="auto" elevation="3" class="mb-8 " color="#EEEEEE">  
