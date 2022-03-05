@@ -10,13 +10,12 @@
     >
     </v-img>
 
-    <v-card-subtitle class="pb-0 pt-2">作成日：{{ article.createdAt }}</v-card-subtitle>
-    <v-card-subtitle class="pb-1 pt-1">更新日：{{ article.updatedAt }}</v-card-subtitle>
-
     <!-- <v-card-title>{{ article.title }}</v-card-title> -->
     <v-card-text class="text--primary pt-2 pb-0">
       <div>{{ article.title }}</div>
     </v-card-text>
+
+    <v-card-subtitle class="pb-0 pt-2">作成日：{{ article.createdAt }} / 更新日：{{ article.updatedAt }}</v-card-subtitle>
 
     <v-card-actions>
       <v-btn color="orange" text @click="showDetail(article)"> Detail </v-btn>
