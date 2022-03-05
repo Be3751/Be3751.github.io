@@ -1,13 +1,28 @@
 # mypage
 
-##
+## 概要
 自己紹介や制作物の掲載等を目的としたwebページです。
 制作途中です。  
 
-公開先💦：  
+## 公開先
 https://be3751.github.io/mypage/
 
-## Project setup
+## 使用技術
+- Vuetify（Vue.js）
+- microCMS
+
+## デザイン
+Home
+<img width="1440" alt="Screen Shot 2022-03-05 at 19 25 30" src="https://user-images.githubusercontent.com/49334354/156879256-364daabf-2c14-4b76-baf4-b64e04b7a6a0.png">
+
+Works  
+<Worksページのスクショを挿入予定>
+
+Blog  
+<Worksページのスクショを挿入予定>
+
+## How to use
+### Compiles and hot-reloads for development
 ```
 npm install
 ```
@@ -22,10 +37,7 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Deploy with GitHub Pages
 ```
-npm run lint
+npm run deploy
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
