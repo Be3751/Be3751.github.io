@@ -35,3 +35,8 @@ export default {
   }
 };
 </script>
+<style>
+  h1, h2{
+    line-height: 100%;
+  }
+</style>
