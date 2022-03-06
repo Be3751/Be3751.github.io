@@ -38,8 +38,8 @@ export default {
 
     // createdAtとupdatedAtからYYYY-MM-DDのみを取得
     this.articles.forEach(article => {
-      article.createdAt = article.createdAt.substr(0, 9);
-      article.updatedAt = article.updatedAt.substr(0, 9);
+      article.createdAt = article.createdAt.substr(0, 10);
+      article.updatedAt = article.updatedAt.substr(0, 10);
     });
   },
 }
