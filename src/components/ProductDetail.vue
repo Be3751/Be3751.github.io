@@ -1,7 +1,7 @@
 <template>
   <v-card flat>
     <!-- <v-img :src="this.product.image.url" height="200"></v-img> -->
-    <v-card-title class="text-h3">{{ this.product.title }} - {{ this.product.subtitle }}</v-card-title>
+    <!-- <v-card-title class="text-h3">{{ this.product.title }} - {{ this.product.subtitle }}</v-card-title> -->
     <v-card-text><div v-html="sanitizedBody" class="text--primary"></div></v-card-text>
   </v-card>
 </template>
