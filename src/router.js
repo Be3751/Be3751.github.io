@@ -11,14 +11,25 @@ import Other from '@/components/Other'
 
 Vue.use(VueRouter)
 
+// const routes = [
+//   { path: '/mypage',      component: Home },
+//   { path: '/mypage/profile', component: Profile},
+//   { path: '/mypage/works', component: Works },
+//   { path: '/mypage/works/:id', name: "product-detail", component: ProductDetail},
+//   { path: '/mypage/blog', component: Blog },
+//   { path: '/mypage/blog/:id', name: "article-detail", component: ArticleDetail},
+//   { path: '/mypage/other', component: Other }
+// ]
+
+// 独自ドメイン用
 const routes = [
-  { path: '/mypage',      component: Home },
-  { path: '/mypage/profile', component: Profile},
-  { path: '/mypage/works', component: Works },
-  { path: '/mypage/works/:id', name: "product-detail", component: ProductDetail},
-  { path: '/mypage/blog', component: Blog },
-  { path: '/mypage/blog/:id', name: "article-detail", component: ArticleDetail},
-  { path: '/mypage/other', component: Other }
+  { path: '/',      component: Home },
+  { path: '/profile', component: Profile},
+  { path: '/works', component: Works },
+  { path: '/works/:id', name: "product-detail", component: ProductDetail},
+  { path: '/blog', component: Blog },
+  { path: '/blog/:id', name: "article-detail", component: ArticleDetail},
+  { path: '/other', component: Other }
 ]
 
 const router = new VueRouter({
