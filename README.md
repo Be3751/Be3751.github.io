@@ -5,7 +5,7 @@
 制作途中です。  
 
 ## 公開先
-https://be3751.github.io/mypage/
+https://www.be3.site
 
 ## 使用技術
 - Vuetify（Vue.js）
