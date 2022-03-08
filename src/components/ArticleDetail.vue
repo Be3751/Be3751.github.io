@@ -1,7 +1,7 @@
 <template>
   <v-card flat>
     <v-img :src="article.image.url" height="400"></v-img>
-    <v-card-title>{{ article.title }}</v-card-title>
+    <!-- <v-card-title>{{ article.title }}</v-card-title> -->
     <v-card-text><div v-html="sanitizedBody" class="text--primary"></div></v-card-text>
   </v-card>
 </template>
@@ -35,3 +35,8 @@ export default {
   }
 };
 </script>
+<style>
+  h1, h2{
+    line-height: 100%;
+  }
+</style>
