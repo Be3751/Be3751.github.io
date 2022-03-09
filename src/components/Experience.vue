@@ -1,15 +1,8 @@
 <template>
-    <v-card width="90vw" height="auto" elevation="3" class="mb-8 " color="#EEEEEE">  
+    <v-card width="80vw" height="auto" elevation="3" class="mb-8 " color="#EEEEEE">  
         <v-card-title class="text-h4 mt-5 mb-5 d-flex justify-center">Experience</v-card-title>
         <v-row style="height: auto;" justify="center" align-content="center" class="mb-5">
         <v-col cols="12" sm="8" md="5" lg="4" xl="3">
-            <!-- <v-card-text v-text="items.text1" class="pt-1 pb-1"></v-card-text>
-            <v-card-text v-text="items.text2" class="pt-1 pb-1"></v-card-text>
-            <v-card-text v-text="items.text3" class="pt-1 pb-1"></v-card-text>
-            <v-card-text v-text="items.text4" class="pt-1 pb-1"></v-card-text>
-            <v-card-text v-text="items.text5" class="pt-1 pb-1"></v-card-text>
-            <v-card-text v-text="items.text6" class="pt-1 pb-1"></v-card-text>
-            <v-card-text v-text="items.text7" class="pt-1 pb-1"></v-card-text> -->
             <v-timeline
               align-top
               dense
@@ -22,34 +15,16 @@
                 
               >
                 <v-row class="pt-1">
-                  <v-col cols="3">
+                  <v-col cols="6">
                     <strong>{{ item.year }}</strong>
                   </v-col>
-                  <v-col>
+                  <v-col cols="6">
                     <strong>{{ item.main }}</strong>
                     <div class="text-caption">
                       {{ item.caption }}
                     </div>
                   </v-col>
                 </v-row>
-                <!-- <v-card
-                  :color="item.color"
-                  dark
-                >
-                  <v-card-title class="text-h6">
-                    {{ item.main }}
-                  </v-card-title>
-                  <v-card-text class="white text--primary">
-                    <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
-                    <v-btn
-                      :color="item.color"
-                      class="mx-0"
-                      outlined
-                    >
-                      Button
-                    </v-btn>
-                  </v-card-text>
-                </v-card> -->
               </v-timeline-item>
             </v-timeline>
         </v-col>
@@ -106,8 +81,8 @@
         item6: {
           color: "red",
           icon: "mdi-human-greeting",
-          year: "2021",
-          main: "タカヤコミュニケーションズ",
+          year: "2021.5~",
+          main: "学部4年 春〜",
           caption: "Azure Kinectによるジャスチャー判定を用いた教育アプリの開発",
           caption2: "Puppeteerを用いたWebアプリ自動テストツールの開発"
         },
