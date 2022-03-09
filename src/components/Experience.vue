@@ -19,7 +19,7 @@
                 :key="i"
                 :color="item.color"
                 :icon="item.icon"
-                fill-dot
+                
               >
                 <v-row class="pt-1">
                   <v-col cols="3">
@@ -32,6 +32,24 @@
                     </div>
                   </v-col>
                 </v-row>
+                <!-- <v-card
+                  :color="item.color"
+                  dark
+                >
+                  <v-card-title class="text-h6">
+                    {{ item.main }}
+                  </v-card-title>
+                  <v-card-text class="white text--primary">
+                    <p>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</p>
+                    <v-btn
+                      :color="item.color"
+                      class="mx-0"
+                      outlined
+                    >
+                      Button
+                    </v-btn>
+                  </v-card-text>
+                </v-card> -->
               </v-timeline-item>
             </v-timeline>
         </v-col>
@@ -51,50 +69,58 @@
     data: () => ({
       items: {
         item1: {
-          color: "red",
-          icon: "mdi-lightbulb-outline",
+          color: "green",
+          icon: "mdi-bird",
           year: "2018",
           main: "学部1年",
           caption: "大学の講義やPyConJP主催のセミナーを通じてプログラミング学習の開始"
         },
         item2: {
-          color: "red",
+          color: "orange",
+          icon: "mdi-airplane",
+          year: "2018.3",
+          main: "学部1年 春",
+          caption: "学内のプログラムに参加しフィリピンで語学留学"
+        },
+        item3: {
+          color: "yellow",
           icon: "mdi-account-group",
           year: "2019",
           main: "学部2年",
           caption: "弊学文化祭iOSアプリの開発"
         },
-        item3: {
+        item4: {
           color: "red",
           icon: "mdi-airplane",
-          year: "2019",
+          year: "2019.8",
           main: "学部2年 夏",
           caption: "ケンブリッジ大学短期留学プログラムへの参加"
         },
-        item4: {
-          color: "red",
-          icon: "mdi-bird",
+        item5: {
+          color: "blue",
+          icon: "mdi-lead-pencil",
           year: "2020",
           main: "学部3年",
           caption: "英語学習に注力, オンライン型英語レッスン事業の開始"
         },
-        item5: {
-          color: "red",
-          icon: "mdi-bird",
-          year: "2021",
-          main: "学部4年",
-          caption: "ジャスチャー判定を用いた教育アプリの開発"
-        },
         item6: {
           color: "red",
-          icon: "mdi-bird",
+          icon: "mdi-human-greeting",
           year: "2021",
-          main: "学部4年",
-          caption: "Webアプリ自動テストツールの開発"
+          main: "タカヤコミュニケーションズ",
+          caption: "Azure Kinectによるジャスチャー判定を用いた教育アプリの開発",
+          caption2: "Puppeteerを用いたWebアプリ自動テストツールの開発"
         },
         item7: {
+          color: "purple",
+          icon: "mdi-robot-outline",
+          year: "2021",
+          main: "学部4年",
+          caption: ""
+        },
+        item8: {
           color: "red",
-          icon: "mdi-bird",
+          icon: "mdi-school-outline",
           year: "2021",
           main: "学部4年",
           caption: "画像が喚起する感情を推定する深層学習モデルの構築"
