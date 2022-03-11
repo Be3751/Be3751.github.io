@@ -1,8 +1,8 @@
 <template>
     <v-card width="80vw" height="auto" elevation="3" class="mb-8 " color="#EEEEEE">  
         <v-card-title class="text-h4 mt-5 mb-5 d-flex justify-center">Experience</v-card-title>
-        <v-row style="height: auto;" justify="center" align-content="center" class="mb-5">
-        <v-col cols="12" sm="8" md="5" lg="4" xl="3">
+        <v-row style="height: auto;" class="mb-5">
+        <v-col cols="12" class="d-flex justify-center">
             <v-timeline
               align-top
               dense
@@ -12,13 +12,12 @@
                 :key="i"
                 :color="item.color"
                 :icon="item.icon"
-                
               >
                 <v-row class="pt-1">
-                  <v-col cols="6">
+                  <v-col cols="2">
                     <strong>{{ item.year }}</strong>
                   </v-col>
-                  <v-col cols="6">
+                  <v-col cols="10">
                     <strong>{{ item.main }}</strong>
                     <div class="text-caption">
                       {{ item.caption }}
@@ -79,21 +78,28 @@
           caption: "英語学習に注力, オンライン型英語レッスン事業の開始"
         },
         item6: {
-          color: "red",
+          color: "grey",
+          icon: "mdi-lead-pencil",
+          year: "2020.9",
+          main: "学部3年",
+          caption: "ソフトバンク インターンシップに参加"
+        },
+        item7: {
+          color: "green",
           icon: "mdi-human-greeting",
           year: "2021.5~",
           main: "学部4年 春〜",
           caption: "Azure Kinectによるジャスチャー判定を用いた教育アプリの開発",
           caption2: "Puppeteerを用いたWebアプリ自動テストツールの開発"
         },
-        item7: {
+        item8: {
           color: "purple",
           icon: "mdi-robot-outline",
           year: "2021",
           main: "学部4年",
           caption: ""
         },
-        item8: {
+        item9: {
           color: "red",
           icon: "mdi-school-outline",
           year: "2021",

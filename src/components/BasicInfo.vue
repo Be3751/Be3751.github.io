@@ -36,7 +36,7 @@
         text1: "所属: 同志社大学M1（24卒）",
         text2: "研究テーマ: 画像が喚起する感情の推定をするモデルの構築",
         text3: "趣味: 猫, 洋服, 銭湯, スマブラ, 動画鑑賞（主にYouTubeとPrime Video）",
-        text4: "最近の興味: GoによるAPI実装, 応用情報, 英検1級",
+        text4: "最近の興味: GoによるAPI実装, サーバ構築・運用，応用情報, 英検1級",
         imgSrc: require('@/assets/img/gura_icon.png')
       },
     }),
