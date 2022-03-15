@@ -10,6 +10,7 @@ import ArticleDetail from '@/components/ArticleDetail'
 
 Vue.use(VueRouter)
 
+// 独自ドメインがない場合
 // const routes = [
 //   { path: '/mypage',      component: Home },
 //   { path: '/mypage/profile', component: Profile},
@@ -20,7 +21,7 @@ Vue.use(VueRouter)
 //   { path: '/mypage/other', component: Other }
 // ]
 
-// 独自ドメイン用
+// 独自ドメインがある場合
 const routes = [
   { path: '/',      component: Home },
   { path: '/profile', component: Profile},
