@@ -14,10 +14,10 @@
                 :icon="item.icon"
               >
                 <v-row class="pt-1">
-                  <v-col cols="2">
+                  <v-col cols="3">
                     <strong>{{ item.year }}</strong>
                   </v-col>
-                  <v-col cols="10">
+                  <v-col cols="9">
                     <strong>{{ item.main }}</strong>
                     <div class="text-caption">
                       {{ item.caption }}
