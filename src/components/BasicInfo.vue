@@ -14,12 +14,12 @@
             <v-img :src="items.imgSrc" max-width="180" max-height="180" aspect-ratio="4/4" class=""></v-img>
           </v-col>
         </v-row>
-        <v-row style="margin-left: 20%;" class="mb-7 mt-5">
-            <v-btn href="https://github.com/Be3751" icon color="black" class="ml-5">
-              <v-icon large>mdi-github</v-icon>
+        <v-row class="mb-7 mt-5 d-flex justify-center">
+            <v-btn href="https://github.com/Be3751" icon color="black" class="mr-5">
+              <v-icon x-large>mdi-github</v-icon>
             </v-btn>
-            <v-btn href="https://twitter.com/Blossomrail" icon color="blue" class="ml-5">
-              <v-icon large>mdi-twitter</v-icon>
+            <v-btn href="https://twitter.com/Blossomrail" icon color="blue">
+              <v-icon x-large>mdi-twitter</v-icon>
             </v-btn>
         </v-row>
     </v-card>

@@ -1,8 +1,7 @@
 <template>
     <v-card width="80vw" height="auto" elevation="3" class="mb-8 " color="#EEEEEE">  
         <v-card-title class="text-h4 mt-5 mb-5 d-flex justify-center">Experience</v-card-title>
-        <v-row style="height: auto;" class="mb-5">
-        <v-col cols="12" class="d-flex justify-center">
+        <v-row style="height: auto;" class="ml-5 mb-5 d-flex justify-center">
             <v-timeline
               align-top
               dense
@@ -14,10 +13,10 @@
                 :icon="item.icon"
               >
                 <v-row class="pt-1">
-                  <v-col cols="2">
+                  <v-col cols="3" class="hidden-sm-and-down">
                     <strong>{{ item.year }}</strong>
                   </v-col>
-                  <v-col cols="10">
+                  <v-col cols="9">
                     <strong>{{ item.main }}</strong>
                     <div class="text-caption">
                       {{ item.caption }}
@@ -26,10 +25,6 @@
                 </v-row>
               </v-timeline-item>
             </v-timeline>
-        </v-col>
-        <!-- <v-col cols="12" sm="8" md="5" lg="4" xl="3" class="d-flex justify-center" style="height: 300px">
-            <v-img :src="items.imgSrc" max-width="180" max-height="180" aspect-ratio="4/4" class=""></v-img>
-        </v-col> -->
         </v-row>
     </v-card>
 </template>

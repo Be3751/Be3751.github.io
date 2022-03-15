@@ -7,10 +7,10 @@ import Works from '@/components/Works'
 import ProductDetail from '@/components/ProductDetail'
 import Blog from '@/components/Blog'
 import ArticleDetail from '@/components/ArticleDetail'
-import Other from '@/components/Other'
 
 Vue.use(VueRouter)
 
+// 独自ドメインがない場合
 // const routes = [
 //   { path: '/mypage',      component: Home },
 //   { path: '/mypage/profile', component: Profile},
@@ -21,7 +21,7 @@ Vue.use(VueRouter)
 //   { path: '/mypage/other', component: Other }
 // ]
 
-// 独自ドメイン用
+// 独自ドメインがある場合
 const routes = [
   { path: '/',      component: Home },
   { path: '/profile', component: Profile},
@@ -29,7 +29,6 @@ const routes = [
   { path: '/works/:id', name: "product-detail", component: ProductDetail},
   { path: '/blog', component: Blog },
   { path: '/blog/:id', name: "article-detail", component: ArticleDetail},
-  { path: '/other', component: Other }
 ]
 
 const router = new VueRouter({

@@ -2,7 +2,7 @@
     <v-card width="80vw" height="auto" elevation="3" class="mb-8 " color="#EEEEEE">  
         <v-card-title v-text="items.name" class="text-h4 mt-5 mb-5 d-flex justify-center"></v-card-title>
         <v-row style="height: auto;" justify="center" align-content="center" class="mb-5">
-        <v-col cols="12" sm="8" md="5" lg="4" xl="3">
+        <v-col cols="12" sm="8" md="5" lg="4" xl="3" >
             <v-card-text v-text="items.text1" class="pt-1 pb-1"></v-card-text>
             <v-card-text v-text="items.text2" class="pt-1 pb-1"></v-card-text>
             <v-card-text v-text="items.text3" class="pt-1 pb-1"></v-card-text>
