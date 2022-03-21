@@ -1,5 +1,9 @@
 <template>
   <v-container>
+    <div class="mt-2 mb-5">
+      <span class="text-h5">■ブログページ</span><br>
+      <span>学んだ技術に関する記事を掲載しています。</span>
+    </div>
     <v-row>
       <v-col v-for="(article, i) in this.articles" :key="i">
         <Article :article="article"></Article>

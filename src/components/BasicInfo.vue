@@ -1,5 +1,5 @@
 <template>
-    <v-card width="80vw" height="auto" elevation="3" class="mb-8 mt-8" color="#EEEEEE">  
+    <v-card width="80vw" height="auto" elevation="3" class="mb-8 mt-2" color="#EEEEEE">  
         <v-row class="mt-1" style="height:auto;" justify="center" align-content="center">
           <v-card-title class="text-h4 mt-5 d-flex justify-center">Basic Information</v-card-title>
         </v-row>
