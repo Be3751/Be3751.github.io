@@ -1,5 +1,9 @@
 <template>
-  <v-container class="d-flex justify-center" style="max-width: 2400px;">
+  <v-container>
+    <div class="mt-2 mb-5">
+      <span class="text-h5">■プロフィールページ</span><br>
+      <span>自己紹介に加えて、スキル、経験について記載しています。</span>
+    </div>
     <v-row>
       <v-col class="d-flex justify-center"><BasicInfo></BasicInfo></v-col>
       <v-col class="d-flex justify-center"><Skill></Skill></v-col>
