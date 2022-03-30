@@ -49,7 +49,7 @@
           icon: "mdi-airplane",
           year: "2018.3",
           main: "学部1年 春",
-          caption: "学内のプログラムに参加しフィリピンで語学留学"
+          caption: "学内のプログラムに参加しフィリピンにて語学留学"
         },
         item3: {
           color: "yellow",
@@ -70,39 +70,31 @@
           icon: "mdi-lead-pencil",
           year: "2020",
           main: "学部3年",
-          caption: "英語学習に注力, オンライン型英語レッスン事業の開始"
+          caption: "英語学習に注力しTOEIC/英検を取得, オンライン型英語レッスン事業の開始"
         },
         item6: {
           color: "grey",
           icon: "mdi-lead-pencil",
           year: "2020.9",
           main: "学部3年",
-          caption: "ソフトバンク インターンシップに参加"
+          caption: "ソフトバンク/2daysインターンシップに参加"
         },
         item7: {
           color: "green",
           icon: "mdi-human-greeting",
           year: "2021.5~",
           main: "学部4年 春〜",
-          caption: "Azure Kinectによるジャスチャー判定を用いた教育アプリの開発",
-          caption2: "Puppeteerを用いたWebアプリ自動テストツールの開発"
+          caption: "タカヤコミュニケーションズ/Azure Kinectによるジャスチャー判定を用いた教育アプリの開発, Puppeteerを用いたWebアプリのテスト効率化ツールの開発",
         },
         item8: {
-          color: "purple",
-          icon: "mdi-robot-outline",
-          year: "2021",
-          main: "学部4年",
-          caption: ""
-        },
-        item9: {
           color: "red",
           icon: "mdi-school-outline",
-          year: "2021",
+          year: "2021.4~",
           main: "学部4年",
           caption: "画像が喚起する感情を推定する深層学習モデルの構築"
         },
       },
-      imgSrc: require('@/assets/img/pc_logo.png')
+      // imgSrc: require('@/assets/img/pc_logo.png')
     }),
     mounted() {
       
