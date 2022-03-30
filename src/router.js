@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '@/components/Home'
-import Profile from '@/components/Profile'
-import Works from '@/components/Works'
+import Home from '@/views/Home'
+import Profile from '@/views/Profile'
+import Works from '@/views/Works'
 import ProductDetail from '@/components/ProductDetail'
-import Blog from '@/components/Blog'
+import Blog from '@/views/Blog'
 import ArticleDetail from '@/components/ArticleDetail'
 
 Vue.use(VueRouter)
