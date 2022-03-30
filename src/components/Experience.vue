@@ -49,7 +49,7 @@
           icon: "mdi-airplane",
           year: "2018.3",
           main: "学部1年 春",
-          caption: "学内のプログラムに参加しフィリピンで語学留学"
+          caption: "学内のプログラムに参加しフィリピンにて語学留学"
         },
         item3: {
           color: "yellow",
@@ -89,12 +89,12 @@
         item8: {
           color: "red",
           icon: "mdi-school-outline",
-          year: "2021",
+          year: "2021.4~",
           main: "学部4年",
           caption: "画像が喚起する感情を推定する深層学習モデルの構築"
         },
       },
-      imgSrc: require('@/assets/img/pc_logo.png')
+      // imgSrc: require('@/assets/img/pc_logo.png')
     }),
     mounted() {
       
