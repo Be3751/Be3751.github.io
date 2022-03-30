@@ -1,6 +1,18 @@
 <template>
   <v-card flat>
     <v-img :src="article.image.url" height="400"></v-img>
+    <v-card-text>
+      <div>
+        <span>
+          <v-icon small class="mb-1">mdi-lead-pencil</v-icon>
+          作成日：{{ article.createdAt }}
+        </span><br/>
+        <span>
+          <v-icon small class="mb-1">mdi-clock-time-eight-outline</v-icon>
+          更新日：{{ article.updatedAt }}
+        </span>
+      </div>
+    </v-card-text>
     <!-- <v-card-title>{{ article.title }}</v-card-title> -->
     <v-card-text><div v-html="sanitizedBody" class="text--primary"></div></v-card-text>
   </v-card>
@@ -32,6 +44,10 @@ export default {
       }
     );
     this.article = response.data;
+
+    // YYYY-MM-DD形式に加工
+    this.article.createdAt = this.article.createdAt.substr(0, 10);
+    this.article.updatedAt = this.article.updatedAt.substr(0, 10);
   }
 };
 </script>
