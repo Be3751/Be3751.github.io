@@ -21,6 +21,10 @@
             <v-btn href="https://twitter.com/Blossomrail" icon color="blue">
               <v-icon x-large>mdi-twitter</v-icon>
             </v-btn>
+            <v-btn href="https://be3751.hatenablog.com" icon color="blue" style="width: 35px; margin-left: 20px;">
+              <!-- <v-icon x-large>mdi-twitter</v-icon> -->
+              <v-img :src="items.hatenaIcon" style="width: 35px;"></v-img>
+            </v-btn>
         </v-row>
     </v-card>
 </template>
@@ -37,7 +41,8 @@
         text2: "研究テーマ: CNNを用いた感情推定モデルの構築",
         text3: "趣味: 猫, 洋服, 銭湯, スマブラ, 動画鑑賞（主にYouTubeとPrime Video）",
         text4: "最近の興味: GoによるWebアプリ開発, ネットワーク，応用情報, 英検1級",
-        imgSrc: require('@/assets/img/gura_icon.png')
+        imgSrc: require('@/assets/img/gura_icon.png'),
+        hatenaIcon: require('@/assets/img/hatenablog.png'),
       },
     }),
     mounted() {
