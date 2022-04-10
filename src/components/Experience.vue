@@ -94,7 +94,6 @@
           caption: "画像が喚起する感情を推定する深層学習モデルの構築"
         },
       },
-      // imgSrc: require('@/assets/img/pc_logo.png')
     }),
     mounted() {
       
