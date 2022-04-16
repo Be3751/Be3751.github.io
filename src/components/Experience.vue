@@ -74,24 +74,31 @@
         },
         item6: {
           color: "grey",
-          icon: "mdi-lead-pencil",
+          icon: "mdi-dog-side",
           year: "2020.9",
-          main: "学部3年",
-          caption: "ソフトバンク/2daysインターンシップに参加"
+          main: "ソフトバンク 2daysインターンシップ",
+          caption: "コロナウィルスの影響で本社2週間勤務だったはずがオンライン2日間に変更となり絶望"
         },
         item7: {
           color: "green",
           icon: "mdi-human-greeting",
-          year: "2021.5~",
-          main: "学部4年 春〜",
-          caption: "タカヤコミュニケーションズ/Azure Kinectによるジャスチャー判定を用いた教育アプリの開発, Puppeteerを用いたWebアプリのテスト効率化ツールの開発",
+          year: "2021.5~2022.4",
+          main: "タカヤコミュニケーションズ アルバイト",
+          caption: "Azure Kinectを用いたジェスチャー認識機能付き教育アプリの開発, Puppeteerを用いたWebアプリの挙動確認効率化ツールの開発",
         },
         item8: {
           color: "red",
           icon: "mdi-school-outline",
           year: "2021.4~",
-          main: "学部4年",
-          caption: "画像が喚起する感情を推定する深層学習モデルの構築"
+          main: "研究",
+          caption: "CNNを用いた感情推定モデルの構築"
+        },
+        item9: {
+          color: "purple",
+          icon: "mdi-laptop",
+          year: "2022.4~",
+          main: "JX通信社 長期インターン",
+          caption: "FastAPI（Python）を用いたバックエンド開発"
         },
       },
     }),

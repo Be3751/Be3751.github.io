@@ -25,10 +25,10 @@
     data: () => ({
       items: {
         name: "Skill",
-        text1: "言語: Python(often), JavaScript(sometimes), C#(sometimse), Java(sometimes), Go(learning)",
-        text2: "フレームワーク: Django, Flask, WPF",
+        text1: "言語: Go(Often), Python(Often), JavaScript(Sometimes), C#(Sometimse), Java(Sometimes)",
+        text2: "フレームワーク: Django, Flask, Gin, WPF",
         text3: "インフラ: AWS(EC2, S3, Lambda, DynamoDB, etc...), Docker",
-        text4: "その他: Git/GitHub, Linux",
+        text4: "その他: Git/GitHub, Linux(Basic), TCP/IP(Learning)",
         text5: "語学: TOEIC855, 英検準1級",
         imgSrc: require('@/assets/img/vue_logo.png')
       },
