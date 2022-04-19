@@ -41,49 +41,42 @@
           color: "green",
           icon: "mdi-bird",
           year: "2018",
-          main: "学部1年",
-          caption: "大学の講義やPyConJP主催のセミナーを通じてプログラミング学習の開始"
+          main: "プログラミング学習の開始",
+          caption: "大学の講義やPyConJP主催のセミナーを通じてプログラミングの楽しさを知る"
         },
         item2: {
           color: "orange",
           icon: "mdi-airplane",
           year: "2018.3",
-          main: "学部1年 春",
-          caption: "学内のプログラムに参加しフィリピンにて語学留学"
+          main: "学内のプログラムを活用しフィリピンにて語学留学",
+          caption: "英会話の楽しさに気付き、帰国後は英会話サークルの運営や留学生との交流が好きになる"
         },
         item3: {
           color: "yellow",
           icon: "mdi-account-group",
           year: "2019",
-          main: "学部2年",
-          caption: "弊学文化祭iOSアプリの開発"
+          main: "弊学文化祭iOSアプリの開発",
+          caption: "同志社大学と株式会社ROHMが協賛して支援する学生プロジェクトに幹部メンバとして参画し、プロジェクト運営とJavaScriptによる開発に勤しむ"
         },
         item4: {
           color: "red",
           icon: "mdi-airplane",
           year: "2019.8",
-          main: "学部2年 夏",
-          caption: "ケンブリッジ大学短期留学プログラムへの参加"
+          main: "ケンブリッジ大学短期留学プログラムへの参加",
+          caption: "英語学習に加えて、人種差別や歴史認識といった国際的な問題に対する関心が増す"
         },
         item5: {
-          color: "blue",
-          icon: "mdi-lead-pencil",
-          year: "2020",
-          main: "学部3年",
-          caption: "英語学習に注力しTOEIC/英検を取得, オンライン型英語レッスン事業の開始"
-        },
-        item6: {
           color: "grey",
           icon: "mdi-dog-side",
           year: "2020.9",
           main: "ソフトバンク 2daysインターンシップ",
-          caption: "コロナウィルスの影響で本社2週間勤務だったはずがオンライン2日間に変更となり絶望"
+          caption: "コロナウィルスの影響で本社2週間勤務だったはずがオンライン2日間に変更となった辛い思い出"
         },
-        item7: {
+        item6: {
           color: "green",
           icon: "mdi-human-greeting",
           year: "2021.5~2022.4",
-          main: "タカヤコミュニケーションズ アルバイト",
+          main: "タカヤコミュニケーションズ 開発アルバイト",
           caption: "Azure Kinectを用いたジェスチャー認識機能付き教育アプリの開発, Puppeteerを用いたWebアプリの挙動確認効率化ツールの開発",
         },
         item8: {
