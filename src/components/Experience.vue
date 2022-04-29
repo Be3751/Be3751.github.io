@@ -17,6 +17,7 @@
                     <strong>{{ item.year }}</strong>
                   </v-col>
                   <v-col cols="9">
+                    <strong class="d-flex d-sm-none d-none d-sm-flex d-md-none">{{ item.year }}</strong>
                     <strong>{{ item.main }}</strong>
                     <div class="text-caption">
                       {{ item.caption }}
@@ -77,7 +78,7 @@
           icon: "mdi-human-greeting",
           year: "2021.5~2022.4",
           main: "タカヤコミュニケーションズ 開発アルバイト",
-          caption: "Azure Kinectを用いたジェスチャー認識機能付き教育アプリの開発, Puppeteerを用いたWebアプリの挙動確認効率化ツールの開発",
+          caption: "Azure Kinectを用いたジェスチャー認識機能付き教育アプリの開発、Puppeteerを用いたWebアプリの挙動確認半自動化ツールの開発",
         },
         item8: {
           color: "red",
@@ -91,7 +92,7 @@
           icon: "mdi-laptop",
           year: "2022.4~",
           main: "JX通信社 長期インターン",
-          caption: "FastAPI（Python）を用いたバックエンド開発"
+          caption: "FastAPI，aiohttp（Python）を用いたバックエンド開発、APIテスト、CI環境の作成"
         },
       },
     }),

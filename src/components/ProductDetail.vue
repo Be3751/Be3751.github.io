@@ -18,8 +18,9 @@
 </template>
 
 <script>
-
+import axios from "axios";
 import sanitizeHtml from "sanitize-html";
+
 export default {
   name: "ProductDetail",
   data: function() {
@@ -34,10 +35,14 @@ export default {
       });
     }
   },
-  mounted() {
-    this.product = this.$route.params.product;
-    console.log(this.product);
-    // this.article = response.data;
+  async mounted() {
+    const response = await axios.get(
+      process.env.VUE_APP_MICROCMS_ENDPOINT + "/products/" + this.$route.params.id,
+      {
+        headers: { "X-MICROCMS-API-KEY": process.env.VUE_APP_X_MICROCMS_API_KEY }
+      }
+    );
+    this.product = response.data;
   }
 }
 </script>

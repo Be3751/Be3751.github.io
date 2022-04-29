@@ -38,7 +38,7 @@ export default {
   },
   async mounted() {
     const response = await axios.get(
-      "https://be3blog.microcms.io/api/v1/articles/" + this.$route.params.id,
+      process.env.VUE_APP_MICROCMS_ENDPOINT + "/articles/" + this.$route.params.id,
       {
         headers: { "X-MICROCMS-API-KEY": process.env.VUE_APP_X_MICROCMS_API_KEY }
       }
@@ -53,6 +53,6 @@ export default {
 </script>
 <style>
   h1, h2{
-    /* line-height: 100%; */
+    line-height: 100%;
   }
 </style>
