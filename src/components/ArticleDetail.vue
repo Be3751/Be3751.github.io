@@ -1,8 +1,8 @@
 <template>
   <v-card flat>
     <v-img :src="article.image.url" height="400"></v-img>
+    <v-card-title class="text-h4">{{ article.title }}</v-card-title>
     <v-card-text>
-      <div>
         <span>
           <v-icon small class="mb-1">mdi-lead-pencil</v-icon>
           作成日：{{ article.createdAt }}
@@ -11,9 +11,7 @@
           <v-icon small class="mb-1">mdi-clock-time-eight-outline</v-icon>
           更新日：{{ article.updatedAt }}
         </span>
-      </div>
     </v-card-text>
-    <!-- <v-card-title>{{ article.title }}</v-card-title> -->
     <v-card-text>
       <div v-html="sanitizedBody" class="text--primary"></div>
     </v-card-text>
@@ -55,6 +53,6 @@ export default {
 </script>
 <style>
   h1, h2{
-    line-height: 100%;
+    /* line-height: 100%; */
   }
 </style>
