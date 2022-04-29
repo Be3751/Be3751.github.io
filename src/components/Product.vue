@@ -58,7 +58,7 @@ export default {
       showDetail: function(){
           this.$router.push({
               name: "product-detail",
-              params: { id: "prdct_" + this.product.title , product:this.product }
+              params: { id: "prd_" + this.product.title , product:this.product }
           })
       }
   }
