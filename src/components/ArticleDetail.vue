@@ -55,4 +55,9 @@ export default {
   h1, h2{
     line-height: 100%;
   }
+  .v-card__text img{
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 </style>
