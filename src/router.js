@@ -4,9 +4,9 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home'
 import Profile from '@/views/Profile'
 import Works from '@/views/Works'
-import ProductDetail from '@/components/ProductDetail'
+import ProductDetail from '@/views/ProductDetail'
 import Blog from '@/views/Blog'
-import ArticleDetail from '@/components/ArticleDetail'
+import ArticleDetail from '@/views/ArticleDetail'
 
 Vue.use(VueRouter)
 
