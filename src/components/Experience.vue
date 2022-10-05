@@ -91,15 +91,22 @@
           color: "purple",
           icon: "mdi-laptop",
           year: "2022.4~7",
-          main: "JX通信社 長期インターン",
+          main: "JX通信社 長期インターンシップ",
           caption: "FastAPI，aiohttp（Python）を用いたバックエンド開発、APIテスト、CI環境の作成"
         },
         item10: {
           color: "blue",
           icon: "mdi-microsoft",
           year: "2022.8~2022.9",
-          main: "日本マイクロソフト サマーインターン",
-          caption: "Customer Engineertとして2ヶ月間の就業"
+          main: "日本マイクロソフト サマーインターンシップ",
+          caption: "Azureを用いたクラウド設計、Microsoft製品と連携したアプリケーション開発の業務を支援"
+        },
+        item11: {
+          color: "red",
+          icon: "mdi-tshirt-crew",
+          year: "2022.10",
+          main: "ファーストリテイリング インターンシップ",
+          caption: "コアエンジニアリングチームにてソフトウェアの品質保証に従事"
         },
       },
     }),
