@@ -106,7 +106,14 @@
           icon: "mdi-tshirt-crew",
           year: "2022.10",
           main: "ファーストリテイリング インターンシップ",
-          caption: "コアエンジニアリングチームにてソフトウェアの品質保証に従事"
+          caption: "ソフトウェアの品質保証を学び、APIに対する自動テストを実装"
+        },
+        item12: {
+          color: "orange",
+          icon: "mdi-cellphone-text",
+          year: "2022.11~Present",
+          main: "MIXI インターンシップ",
+          caption: "NFT売買サービスにおけるAPIへの機能追加"
         },
       },
     }),
