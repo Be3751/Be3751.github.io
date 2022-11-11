@@ -109,11 +109,11 @@
           caption: "ソフトウェアの品質保証を学び、APIに対する自動テストを実装"
         },
         item11: {
-          color: "orange",
+          color: "red",
           icon: "mdi-tshirt-crew",
-          year: "2022.11~Present",
-          main: "MIXI インターンシップ",
-          caption: "NFT売買サービスにおけるAPIへの機能追加"
+          year: "2022.10",
+          main: "ファーストリテイリング インターンシップ",
+          caption: "ソフトウェアの品質保証を学び、godogを用いたAPIに対する自動テストを実装"
         },
       },
     }),
