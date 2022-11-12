@@ -25,6 +25,23 @@
 
       <v-spacer></v-spacer>
 
+      <div class="d-flex align-center">
+        <v-btn icon to="/profile" class="mr-10 ml-2">
+          <v-icon>mdi-card-account-details-outline</v-icon>
+          <span class="font-weight-bold ml-1">Profile</span>
+        </v-btn>
+
+        <v-btn icon to="/works" class="mr-7 ml-2">
+          <v-icon>mdi-folder-multiple-image</v-icon>
+          <span class="font-weight-bold ml-1">Works</span>
+        </v-btn>
+
+        <v-btn icon to="/blog" class="mr-3 ml-2">
+          <v-icon>mdi-book-open-variant</v-icon>
+          <span class="font-weight-bold ml-1">Blog</span>
+        </v-btn>
+      </div>
+
     </v-app-bar>
     <v-main>
       <router-view @catchTitle="changeTitle"></router-view>
