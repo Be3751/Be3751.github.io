@@ -40,6 +40,7 @@
           <v-icon>mdi-book-open-variant</v-icon>
           <span class="font-weight-bold ml-1">Blog</span>
         </v-btn>
+
       </div>
 
     </v-app-bar>
